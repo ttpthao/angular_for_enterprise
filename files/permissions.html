@@ -1,0 +1,8 @@
+<div class="x-panel">
+    <h3 class="x_title title_right">
+        {{i18n.security.permissions.title}}
+    </h3>
+    <div class="page-content x_content">
+        <grid (onItemDeleteClicked)="onPermissionDeleteClicked($event)" [options]=model.options [eventKey]=model.eventKey></grid>
+    </div>
+</div>
