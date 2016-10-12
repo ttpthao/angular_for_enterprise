@@ -20,6 +20,7 @@ namespace App.Api.Features.Share.Tasks.Data
             CreateLanguages();
             IList<Entity.Registration.User> users = new List<Entity.Registration.User>();
             users.Add(new Entity.Registration.User("tu.tran@yahoo.com", "123456","TU","Tran"));
+            users.Add(new Entity.Registration.User("ttpthao@gmail.com", "123456", "Thao", "Tran"));
             IUserService userService = IoC.Container.Resolve<IUserService>();
             userService.CreateIfNotExist(users);
         }
